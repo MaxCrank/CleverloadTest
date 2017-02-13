@@ -150,7 +150,7 @@ namespace CleverloadOpenXMLTest
                                 SetCellText(cell, "Thu", true);
                                 break;
                             case 5:
-                                SetCellText(cell, "Wed", true);
+                                SetCellText(cell, "Fri", true);
                                 break;
                         }
                     else if (x == 4)
