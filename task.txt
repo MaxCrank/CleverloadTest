@@ -1,0 +1,12 @@
+Please create a desktop application based on .NET platform.
+Program should open word document 'test.doc' and operate with XML data inside this file. 
+All changes must be applied in the same file, so modified 'test.doc' is a result of executing your program.
+What should be done:
+ - please add a row "{FirstName} {LastName}, {City}" after first paragraph, where params are your personal info;
+ - all blue symbols should be changed to green color;
+ - red words should be underlined;
+ - on sheet #2 please add table with the following structure - http://1.bp.blogspot.com/-5RDua4sju1M/TWNzHKtbVAI/AAAAAAAAADI/Dacxd9hVqtw/s1600/timeTable.gif
+
+UI is not important, you can do whatever you want.
+You should use Open XML SDK 
+Solution should be provided as ZIP/RAR archive or as a link to repository.

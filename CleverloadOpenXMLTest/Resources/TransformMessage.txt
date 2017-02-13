@@ -1,0 +1,6 @@
+ - row with First Name, Last Name and City will be added after first paragraph;
+ - all blue symbols will be changed to green color;
+ - red words will be underlined;
+ - table will be added to the second page.
+
+ Do you wish to apply these changes to your MS Word document?

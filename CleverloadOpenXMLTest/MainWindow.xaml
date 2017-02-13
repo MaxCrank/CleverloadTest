@@ -1,0 +1,29 @@
+﻿<Window x:Class="CleverloadOpenXMLTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CleverloadOpenXMLTest"
+        mc:Ignorable="d"
+        Title="Cleverload OpenXML Microsoft Word Transformer" Height="600" Width="800" 
+        VerticalAlignment="Center" HorizontalAlignment="Center">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Name="label1" Margin="0,10,172,98" Content="MS Word Document File Path" VerticalAlignment="Center" HorizontalAlignment="Right" />
+        <TextBox IsReadOnly="True" Name="lblFilePath" BorderThickness="1" BorderBrush="Aquamarine" VerticalAlignment="Center"  HorizontalAlignment="Right" MinWidth="420" Margin="319,36,38,68" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Width="435" />
+        <Label Name="label2" Content="First Name" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Margin="56,16,658,81" Height="30"/>
+        <TextBox IsReadOnly="True"  Name="tbFirstName" MinWidth="110" Height="30" Text="Max (Maksym)" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="134,16,0,81" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <Label Name="label3" Content="Last Name" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Margin="56,48,658,49" Height="30"/>
+        <TextBox IsReadOnly="True" Name="tbLastName" MinWidth="110" Height="30" Text="Shnurenok" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="134,48,0,49" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <Label Name="label4" Content="City" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Margin="56,80,658,17" Height="30"/>
+        <TextBox Name="tbCity" IsReadOnly="True"  MinWidth="110" Height="30" Text="Chernihiv (Ukraine)" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="134,80,0,17" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <Button Background="GreenYellow" HorizontalAlignment="Right" VerticalAlignment="Center" Width="150" Content="SELECT MS WORD FILE" Name="btnSelectFile" Margin="0,68,179,37" Click="btnSelectFile_OnClick" />
+        <Button Background="OrangeRed" HorizontalAlignment="Right" VerticalAlignment="Center" Width="150" Content="TRANSFORM" Name="btnTransform" Margin="0,94,179,11" Click="BtnTransform_OnClick" IsEnabled="False"/>
+        <Label Grid.Row="1" BorderThickness="0,1,0,0" BorderBrush="Aqua" Background="AntiqueWhite" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="MS Office Word Document Viewer" />
+        <DocumentViewer Grid.Row="2" Name="xpsViewer" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
